@@ -1,0 +1,108 @@
+{
+  "slide": {
+    "template1": {
+      "id": "template01",
+      "img": "./img/img1.jpg",
+      "alt": "Imagem de moto",
+      "texts": [
+        {
+          "title": "Small but very strong",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        },
+        {
+          "title": "Very good to travel",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "title": "Not expensive",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        },
+        {
+          "title": "Consumes little fuel",
+          "text": "Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        }
+      ]
+    },
+    "template2": {
+      "id": "template02",
+      "data": [
+        {
+          "img": "./img/img2.jpg",
+          "alt": "Imagem de carro na natureza",
+          "title": "Beautiful and very strong",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        },
+        {
+          "img": "./img/img3.jpg",
+          "alt": "Imagem de carro",
+          "title": "Old but very much desirable",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "img": "./img/img4.jpg",
+          "alt": "Imagem de carros",
+          "title": "Make your choice",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        },
+        {
+          "img": "./img/img5.jpg",
+          "alt": "Imagem de carro na estrada",
+          "title": "Love the nature is love yourself",
+          "text": "Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        }
+      ]
+    },
+    "template3": {
+      "id": "template03",
+      "img": "./img/img3.jpg",
+      "alt": "Imagem de moto",
+      "texts": [
+        {
+          "title": "Small but very strong",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae."
+        },
+        {
+          "title": "Very good to travel",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae"
+        },
+        {
+          "title": "Not expensive",
+          "text": "Lorem ipsum dolor velit nam voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        },
+        {
+          "title": "Consumes little fuel",
+          "text": "Modi ratione facilis suscipit natus non beatae. Repudiandae dolor fugit nihil velit nam/"
+        }
+      ]
+    },
+    "template4": {
+      "id": "template04",
+      "data": [
+        {
+          "img": "./img/img2.jpg",
+          "alt": "Imagem de carro na natureza",
+          "title": "Beautiful and very strong",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        },
+        {
+          "img": "./img/img3.jpg",
+          "alt": "Imagem de carro",
+          "title": "Old but very much desirable",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "img": "./img/img4.jpg",
+          "alt": "Imagem de carros",
+          "title": "Make your choice",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        },
+        {
+          "img": "./img/img5.jpg",
+          "alt": "Imagem de carro na estrada",
+          "title": "Love the nature is love yourself",
+          "text": "Laudantium obcaecati a unde ipsa, modi ratione facilis suscipit natus non beatae voluptatibus dolore cupiditate veniam repudiandae dolor fugit nihil velit nam."
+        }
+      ]
+    }
+  }
+}
