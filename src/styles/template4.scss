@@ -1,0 +1,171 @@
+.template4 {
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: $shadow-light;
+	width: 768px;
+	position: relative;
+
+	.slide-content {
+		.slide-list {
+			background-color: white;
+			position: relative;
+			list-style: none;
+
+			>* {
+				position: absolute;
+				top: 0;
+				opacity: 0;
+				pointer-events: none;
+			}
+
+			>.active {
+				pointer-events: initial;
+				position: relative;
+				opacity: 1;
+				transition: .5s;
+			}
+
+			&-content {
+				padding: 1.5rem 3rem;
+				min-height: 175px;
+			}
+
+			&-item {
+				opacity: 0;
+
+				.slide-image {
+					img {
+						height: 220px;
+						width: 100%;
+						object-fit: cover;
+						margin-top: -50px;
+					}
+				}
+			}
+
+			&-title {
+				color: $themeColor-red;
+				font-family: $font-title;
+				font-size: clamp(1.5rem, 2vw, 2rem);
+				line-height: 1.2;
+				margin-bottom: 1rem;
+				text-transform: uppercase;
+			}
+
+			&-text {
+				color: $themeColor-dark;
+				font-family: $font-text;
+				font-size: clamp(0.875rem, 2vw, 1rem);
+			}
+		}
+	}
+
+	.slide-nav {
+		background-color: white;
+		display: flex;
+		justify-content: space-between;
+		align-self: end;
+		padding: 1.5rem 3rem;
+		z-index: 2;
+	}
+
+	.slide-thumb {
+		display: flex;
+		padding: .5rem 1rem;
+		position: absolute;
+		top: 0;
+		z-index: 3;
+		width: 100%;
+
+		>* {
+			flex: 1;
+			height: 3px;
+			background-color: $themeColor-red-light;
+			margin: 5px;
+			border-radius: 3px;
+			overflow: hidden;
+
+			&.active {
+				&::after {
+					content: '';
+					display: block;
+					height: inherit;
+					background-color: $themeColor-red;
+					border-radius: 3px;
+					transform: translateX(-100%);
+					animation: thumb 5s forwards linear;
+				}
+			}
+		}
+	}
+
+	button {
+		background-color: white;
+		border-radius: 50%;
+		border: 2px solid $themeColor-red;
+		transition: .2s;
+		position: relative;
+
+		&:focus-visible {
+			outline: 1px dotted #ccc;
+		}
+
+		&:hover {
+			background-color: $themeColor-red;
+			transform: scale(1.1);
+			box-shadow: $shadow-dark;
+
+			.arrow .icon {
+				color: white;
+			}
+		}
+
+		&:active {
+			background-color: $themeColor-red;
+		}
+
+		.arrow {
+			display: grid;
+			place-items: center;
+			width: 32px;
+
+			.icon {
+				color: $themeColor-red;
+				width: 30px;
+			}
+		}
+
+		.arrow-right {
+			transform: rotate(180deg);
+		}
+	}
+
+	@media (max-width: 768px) {
+		width: auto;
+
+		.slide-image {
+			height: auto;
+
+			img {
+				margin-top: -90px;
+			}
+		}
+
+		.slide-content {
+			.slide-list {
+
+				&-title {
+					margin-bottom: .5rem;
+				}
+
+				&-content {
+					padding: 1.5rem 1.5rem 0;
+				}
+			}
+		}
+
+		.slide-nav {
+			padding: 1rem 1.5rem;
+		}
+	}
+}

@@ -1,0 +1,180 @@
+.template3 {
+	display: grid;
+	grid-template-columns: 467px 300px;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: $shadow-light;;
+
+	.slide-image {
+		img {
+			object-fit: cover;
+			height: 400px;
+		}
+	}
+
+	.slide-content {
+		display: grid;
+
+		.slide-list {
+			background-color: $themeColor-red;
+			position: relative;
+			grid-area: 1 / 1;
+			padding: 2rem;
+
+			>* {
+				position: absolute;
+				top: 0;
+				opacity: 0;
+				pointer-events: none;
+			}
+
+			>.active {
+				pointer-events: initial;
+				position: relative;
+				opacity: 1;
+				transition: .5s;
+			}
+
+			&-item {
+				opacity: 0;
+				display: flex;
+
+				>div {
+					margin-top: 1rem;
+				}
+			}
+
+			&-title {
+				color: white;
+				font-family: $font-title;
+				font-size: clamp(1.5rem, 2.5vw, 2rem);
+				line-height: 1.2;
+				margin-bottom: 1rem;
+				text-transform: uppercase;
+			}
+
+			&-text {
+				color: white;
+				font-family: $font-text;
+				font-size: clamp(0.875rem, 2vw, 1rem);
+			}
+		}
+	}
+
+	.slide-nav {
+		border-top: 1px solid $themeColor-red;
+		display: flex;
+		justify-content: space-between;
+		grid-area: 1/1;
+		align-self: end;
+		padding: 1rem 1.5rem;
+		z-index: 2;
+	}
+
+	.slide-thumb {
+		display: flex;
+		align-self: start;
+		grid-area: 1 / 1;
+		grid-column: 1 / -1;
+		z-index: 1;
+		padding: .5rem 1rem;
+
+		>* {
+			flex: 1;
+			height: 3px;
+			background-color: $themeColor-red-light;
+			margin: 5px;
+			border-radius: 3px;
+			overflow: hidden;
+
+			&.active {
+				&::after {
+					content: '';
+					display: block;
+					height: inherit;
+					background-color: $themeColor-light;
+					border-radius: 3px;
+					transform: translateX(-100%);
+					animation: thumb 5s forwards linear;
+				}
+			}
+		}
+	}
+
+	button {
+		background: none;
+		border-radius: 50%;
+		border: 2px solid $themeColor-red-light;
+		transition: .2s;
+		position: relative;
+
+		&:focus-visible {
+			outline: 1px dotted #ccc;
+		}
+
+		&:hover {
+			background-color: white;
+			transform: scale(1.1);
+			box-shadow: $shadow-dark;
+
+			.arrow .icon {
+				color: $themeColor-red;
+			}
+		}
+
+		&:active {
+			background-color: $themeColor-red;
+		}
+
+		.arrow {
+			display: grid;
+			place-items: center;
+			width: 32px;
+
+			.icon {
+				color: white;
+				width: 30px;
+			}
+		}
+
+		.arrow-right {
+			transform: rotate(180deg);
+		}
+	}
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+
+		.slide-image {
+			height: 250px;
+
+			img {
+				margin-top: -90px;
+				width: 100%;
+			}
+		}
+
+		.slide-content {
+			.slide-list {
+				display: grid;
+				height: 260px;
+				padding: 1.5rem;
+
+				&-item {
+					> div {
+						margin-top: 1.5rem;
+					}
+				}
+
+				&-title {
+					margin-bottom: .5rem;
+				}
+			}
+		}
+
+		.slide-nav {
+			grid-area: 1/1;
+			padding: 1rem 1.5rem;
+		}
+	}
+}
